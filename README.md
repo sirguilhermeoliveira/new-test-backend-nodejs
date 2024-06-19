@@ -34,7 +34,7 @@ User Stories:
 - AWS SQS for the catalog change notifications.
 - AWS S3 for storing the catalog JSON.
 - Node.js for the backend.
-- Express.js as the web framework.
+- NestJS as the web framework.
 
 *Diagram representing the final structure of the project:*
 
