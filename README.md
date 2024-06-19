@@ -39,3 +39,16 @@ User Stories:
 *Diagram representing the final structure of the project:*
 
 ![image](https://github.com/githubanotaai/new-test-backend-nodejs/assets/52219768/504ba448-f128-41db-ae86-18dc19c0dc9d)
+
+Instructions
+
+- Use your own AWS account to set up the required services.
+- Do a readme for the application
+- Proper structure of the application layers.
+- Handling of outgoing calls.
+- Effective use of environment variables.
+- Implementation of unit tests.
+- Logging mechanisms.
+- Error handling strategies.
+- Code organization, module separation, readability, and comments.
+- Commit history.
