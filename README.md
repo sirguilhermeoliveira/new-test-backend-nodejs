@@ -1,10 +1,6 @@
-Backend Analyst Candidate Test
-Dear developer,
-Welcome to the Backend Analyst Candidate Test. This test aims to assess your general knowledge and development speed. Below, you will find the details and requirements for this test.
-
 The Challenge
 
-Your task is to develop an API using Node.js for a product catalog management system in a marketplace application. You should analyze and convert the following user stories into routes for the application:
+Your task is to develop an API using NodeJS for a product catalog management system in a marketplace application. You should analyze and convert the following user stories into routes for the application:
 
 User Stories:
 
