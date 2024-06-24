@@ -1,54 +1,73 @@
-The Challenge
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-Your task is to develop an API using NodeJS for a product catalog management system in a marketplace application. You should analyze and convert the following user stories into routes for the application:
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-User Stories:
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-- As a user, I want to register a product with its owner, so that I can access its data in the future (title, description, price, category, owner ID).
+## Description
 
-- As a user, I want to register a category with its owner, so that I can access its data in the future (title, description, owner ID).
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-- As a user, I want to associate a product with a category.
+## Installation
 
-- As a user, I want to update the data of a product or category.
+```bash
+$ yarn install
+```
 
-- As a user, I want to delete a product or category from my catalog.
+## Running the app
 
-- A product can only be associated with one category at a time.
+```bash
+# development
+$ yarn run start
 
-- Assume that products and categories belong only to one owner.
+# watch mode
+$ yarn run start:dev
 
-- Keep in mind that this is an online product catalog, which means there will be multiple requests for editing items/categories per second, as well as accessing the catalog search endpoint.
+# production mode
+$ yarn run start:prod
+```
 
-- Consider the product catalog as a JSON compilation of all available categories and items owned by a user. This way, the catalog search endpoint does not need to fetch information from the database.
+## Test
 
-- Whenever there is a change in the product catalog, publish this change to the "catalog-emit" topic in the AWS SQS service.
+```bash
+# unit tests
+$ yarn run test
 
-- Implement a consumer that listens to catalog changes for a specific owner.
+# e2e tests
+$ yarn run test:e2e
 
-- When the consumer receives a message, search the database for that owner's catalog, generate the catalog JSON, and publish it to an AWS S3 service bucket.
+# test coverage
+$ yarn run test:cov
+```
 
-*You need to develop this test using the following technologies:*
+## Support
 
-- MongoDB for the database.
-- AWS SQS for the catalog change notifications.
-- AWS S3 for storing the catalog JSON.
-- Node.js for the backend.
-- NestJS as the web framework.
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-*Diagram representing the final structure of the project:*
+## Stay in touch
 
-![image](https://github.com/githubanotaai/new-test-backend-nodejs/assets/52219768/504ba448-f128-41db-ae86-18dc19c0dc9d)
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-Instructions
+## License
 
-- Use your own AWS account to set up the required services.
-- Do a readme for the application
-- Proper structure of the application layers.
-- Handling of outgoing calls.
-- Effective use of environment variables.
-- Implementation of unit tests.
-- Logging mechanisms.
-- Error handling strategies.
-- Code organization, module separation, readability, and comments.
-- Commit history.
+Nest is [MIT licensed](LICENSE).
